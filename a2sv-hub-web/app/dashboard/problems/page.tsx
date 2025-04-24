@@ -4,8 +4,8 @@ import { getLeetCodeProblems } from "@/lib/leetcodeService";
 import { HiViewColumns } from "react-icons/hi2";
 import { IoFilterSharp } from "react-icons/io5";
 import { PiExportBold } from "react-icons/pi";
-import DataTable from "../components/Table/Table";
-import { columns } from "../components/Problems/Columns";
+import DataTable from "../../components/Table/Table";
+import { columns } from "../../components/Problems/Columns";
 
 interface ProblemListPageProps {
   searchParams?: { page?: string };
