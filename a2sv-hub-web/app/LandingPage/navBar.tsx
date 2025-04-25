@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { LoginModal } from '../LoginModal'
+import { SignupModal } from '../SignupModal'
 
 const NavBar = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -28,10 +29,8 @@ const NavBar = () => {
 
         <div>
         
-      
-      <LoginModal  
-        // onClose={() => setIsLoginModalOpen(false)} 
-      />        
+      <SignupModal />
+      <LoginModal />        
       </div>
     </div>
   )
