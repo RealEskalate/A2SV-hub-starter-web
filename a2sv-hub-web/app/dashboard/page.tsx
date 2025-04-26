@@ -1,9 +1,9 @@
 import { Problem } from "@/types/Problem";
 import { Submission } from "@/types/Submission";
-import WelcomeCard from "../components/WelcomeCard";
-import EventCard from "../components/EventCard";
+import WelcomeCard from "./WelcomeCard";
+import EventCard from "./EventCard";
 import ProgressList from "../components/Progress/ProgressList";
-import DailyProblemCard from "../components/DailyProblemCard";
+import DailyProblemCard from "./DailyProblemCard";
 import ProblemList from "../components/Problems/ProblemList";
 import SubmissionList from "../components/LatestSubmission/SubmisionList";
 
