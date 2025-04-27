@@ -125,7 +125,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
             
             
             
-            <div className="text-center text-sm">
+            {/* <div className="text-center text-sm">
               Don&apos;t have an account?{' '}
               <Button
                 variant="link"
@@ -134,7 +134,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
               >
                 Sign up
               </Button>
-            </div>
+            </div> */}
           </form>
         </Form>
       </DialogContent>

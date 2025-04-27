@@ -20,7 +20,7 @@ const NavBar = () => {
             />
         </Link>
       </div> 
-        <div className='menu flex items-center gap-10 text-black '>
+        <div className='menu flex items-center gap-10 text-black ml-5 '>
             <Link href={'/'}>Home</Link>
             <Link href={'https://a2sv-hub.gitbook.io/hub'}>Docs</Link>
             <Link href={'/blog'} inert className='text-gray-500' >Blog</Link>
