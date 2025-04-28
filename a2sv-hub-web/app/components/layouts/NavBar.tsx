@@ -5,20 +5,22 @@ import { GoBell } from "react-icons/go";
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import Image from "next/image"
+import Image from "next/image";
 import { Badge } from '@/components/ui/badge';
 
 export default function NavBar() {
   const [searchExpanded, setSearchExpanded] = useState(false);
 
   return (
-    <div className="h-16 flex items-center px-7 w-full bg-transparent !important">
+    <div className="sticky top-0 z-50 h-16 flex items-center px-7 w-full bg-transparent backdrop-blur-md py-3">
+      {/* Small devices - back button */}
       <div className="md:hidden mr-2">
         <Button variant="ghost" size="icon">
           <ChevronLeft className="h-7 w-7 text-gray-800" />
         </Button>
       </div>
-      
+
+      {/* Search area */}
       <div className={`flex items-center ${searchExpanded ? 'flex-1' : ''}`}>
         {searchExpanded ? (
           <div className="flex-1 flex gap-2">
@@ -46,7 +48,8 @@ export default function NavBar() {
           </Button>
         )}
       </div>
-      
+
+      {/* Notification and Profile */}
       <div className="ml-auto flex items-center gap-2">
         <Button variant="ghost" size="icon" className="relative">
           <GoBell fontSize={32} />
@@ -62,7 +65,6 @@ export default function NavBar() {
           height={40}
           className="rounded-full"
         />
-        
       </div>
     </div>
   );
