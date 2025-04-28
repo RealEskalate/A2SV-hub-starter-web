@@ -1,18 +1,12 @@
-"use client";
 
+import Image from "next/image";
+import LandingPage from "./LandingPage/Landingpage";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-8">
-      <div className="max-w-2xl mx-auto space-y-8">
+    <div>
+      <LandingPage />
+    </div>
 
-        {/* Default Progress Bar */}
-        <div className="space-y-2">
-          Gado
-        </div>
-
-      
-      </div>
-    </main>
   );
 }
