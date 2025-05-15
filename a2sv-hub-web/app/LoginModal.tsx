@@ -49,7 +49,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
                 <code className="text-white">{JSON.stringify(values, null, 2)}</code>
             </pre>,
         )
-        window.location.href = '/home'
+        window.location.href = '/dashboard'
     } catch (error) {
         console.error('Form submission error', error)
         toast.error('Failed to submit the form. Please try again.')
